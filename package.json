@@ -97,5 +97,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "firebase-tools": "^5.0.1"
   }
 }

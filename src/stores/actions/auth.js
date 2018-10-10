@@ -1,6 +1,8 @@
 import * as actionTypes from './actionTypes';
 import axios from 'axios';
 
+const WEB_API_KEY = 'AIzaSyC7pX1_aBGFMTv3-aPEhsevnh7KfzYwnU8';
+
 export const authStart = () => {
     return {
         type: actionTypes.AUTH_START
@@ -25,9 +27,9 @@ export const authFail = (error) => {
 export const auth = (email, password, signUp) => {
     return dispatch => {
         dispatch(authStart());
-        let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyC7pX1_aBGFMTv3-aPEhsevnh7KfzYwnU8';
+        let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=' + WEB_API_KEY;
         if(!signUp) {
-            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7pX1_aBGFMTv3-aPEhsevnh7KfzYwnU8';
+            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=' + WEB_API_KEY;
         }
         axios.post(url, {
             email: email,
