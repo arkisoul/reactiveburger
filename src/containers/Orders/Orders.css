@@ -1,0 +1,6 @@
+.Orders {
+    text-align: center;
+    background-color: #FCEADE;
+    min-height: calc(100vh - 3.5em);
+    padding: 2em 1em;
+}

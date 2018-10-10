@@ -1,0 +1,10 @@
+.ContactData {
+    width: 80%;
+    max-width: 500px;
+    margin: 1em auto;
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 6px #ccc;
+    padding: 2em;
+    text-align: center;
+    background-color: #f5f5f5;
+}

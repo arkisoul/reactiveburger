@@ -1,0 +1,18 @@
+.Order {
+    padding: 1em 1em;
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 6px #ccc;
+    width: 80%;
+    max-width: 500px;
+    margin: 0.75em auto;
+    text-align: left;
+    background-color: #f5f5f5;
+}
+
+.Ingredient {
+    border: 1px solid #eee;
+    padding: 4px 8px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px #ccc;
+    margin: 4px;
+}

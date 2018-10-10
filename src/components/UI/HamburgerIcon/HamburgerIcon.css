@@ -1,0 +1,55 @@
+.HamburgerIcon {
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.HamburgerIcon span {
+    width: 2em;
+    height: 3px;
+    background: pink;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    transition: transform ease-in-out 350ms;
+}
+
+.HamburgerIcon span::before,
+.HamburgerIcon span::after {
+    content: '';
+    width: 2em;
+    height: 3px;
+    background: pink;
+    display: inline-block;
+    position: absolute;
+    transition: transform ease-in-out 350ms;
+}
+
+.HamburgerIcon span::before {
+    transform: translateY(-8px);
+}
+
+.HamburgerIcon span::after {
+    transform: translateY(8px);
+}
+
+.Open span {
+    transform: rotate(45deg);
+}
+
+.Open span::before {
+    opacity: 0;
+    left: -1000px;
+}
+
+.Open span::after {
+    transform: translateY(0) rotate(-90deg);
+}
+
+@media (min-width: 500px) {
+    .HamburgerIcon {
+        display: none;
+    }
+}

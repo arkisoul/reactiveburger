@@ -1,0 +1,5 @@
+.Checkout {
+    min-height: calc(100vh - 3.5em);
+    background-color: #FCEADE;
+    padding: 2em 1em;
+}
